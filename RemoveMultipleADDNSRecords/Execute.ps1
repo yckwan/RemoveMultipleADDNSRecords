@@ -3,5 +3,5 @@
     $ZoneName = $line.ZoneName
     $HostName = $line.HostName
     $ResourceType = $line.ResourceType
-        Remove-DnsServerResourceRecord -ZoneName $.Zon$ZoneName -Name $HostName -RRType $ResourceType # -Force
+        Remove-DnsServerResourceRecord -ZoneName $.Zon$ZoneName -Name $HostName -RRType $ResourceType -Force
     }
